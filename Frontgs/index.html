@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clean Energy</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts: Geist Mono -->
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="bg-primary text-white text-center py-4">
+        <div class="container">
+            <h1><i class="fa-solid fa-seedling"></i> Clean Energy</h1>
+            <p class="lead">Descubra o futuro sustentável com fontes de energia limpa</p>
+        </div>
+    </header>
+
+    <!-- Menu de Navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#intro">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tipos">Tipos de Energia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#beneficios">Benefícios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seção de Introdução -->
+    <section id="intro" class="py-5 text-center bg-light">
+        <div class="container">
+            <h2 class="text-success">O que é Energia Limpa?</h2>
+            <p class="lead">A energia limpa provém de fontes renováveis, como o sol, o vento e a água. Contribui para a sustentabilidade global, reduzindo a poluição.</p>
+            <img src="energialimpa.jpg" alt="Energia Limpa" class="img-fluid rounded shadow-lg mt-4">
+        </div>
+    </section>
+
+    <!-- Seção de Tipos de Energia -->
+    <section id="tipos" class="py-5 bg-success text-white">
+        <div class="container">
+            <h2 class="text-center mb-5">Tipos de Energia Limpa</h2>
+            <div class="row g-4">
+                <!-- Energia Solar -->
+                <div class="col-md-4">
+                    <div class="card bg-light text-dark shadow">
+                        <img src="solar.jpeg" class="card-img-top" alt="Energia Solar">
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-success">Energia Solar</h5>
+                            <p class="card-text">A energia solar converte a luz do sol em eletricidade ou calor, sendo uma das fontes mais abundantes e acessíveis.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalVideoSolar">Saiba Mais</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Energia Eólica -->
+                <div class="col-md-4">
+                    <div class="card bg-light text-dark shadow">
+                        <img src="eolica.jpg" class="card-img-top" alt="Energia Eólica">
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-success">Energia Eólica</h5>
+                            <p class="card-text">A energia eólica utiliza a força do vento para gerar eletricidade através de turbinas, sendo limpa e renovável.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalVideoEolica">Saiba Mais</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Energia Hidrelétrica -->
+                <div class="col-md-4">
+                    <div class="card bg-light text-dark shadow">
+                        <img src="hidreletrica.jpg" class="card-img-top" alt="Energia Hidrelétrica">
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-success">Energia Hidrelétrica</h5>
+                            <p class="card-text">A energia hidrelétrica aproveita a força da água em movimento para gerar eletricidade, sendo uma das fontes mais utilizadas globalmente.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalVideoHidreletrica">Saiba Mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modais com Vídeos Explicativos -->
+
+    <!-- Modal Energia Solar -->
+    <div class="modal fade" id="modalVideoSolar" tabindex="-1" aria-labelledby="modalVideoSolarLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalVideoSolarLabel">Vídeo: Energia Solar</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe width="100%" height="400" src="https://www.youtube.com/embed/fl5w6iv8p6E?si=3YmVJRATOUe-N7Wy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Energia Eólica -->
+    <div class="modal fade" id="modalVideoEolica" tabindex="-1" aria-labelledby="modalVideoEolicaLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalVideoEolicaLabel">Vídeo: Energia Eólica</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe width="100%" height="400" src="https://www.youtube.com/embed/Jr4PwXasdvg?si=TtoIERd53U-FD7Nl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Energia Hidrelétrica -->
+    <div class="modal fade" id="modalVideoHidreletrica" tabindex="-1" aria-labelledby="modalVideoHidreletricaLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalVideoHidreletricaLabel">Vídeo: Energia Hidrelétrica</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe width="100%" height="400" src="https://www.youtube.com/embed/tmHDVsutyzA?si=y1Tk0lbmVQwVR5Il" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </section>
+
+    <!-- Seção de Benefícios e Desafios -->
+    <section id="beneficios" class="py-5 text-white">
+        <div class="container">
+            <h2 class="text-center mb-5">Benefícios e Desafios</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <h4 class="text-center">Benefícios da Energia Limpa:</h4>
+                    <ul class="list-unstyled text-center">
+                        <li>✔ Reduz a emissão de gases de efeito estufa.</li>
+                        <li>✔ Contribui para a preservação ambiental.</li>
+                        <li>✔ Fonte inesgotável de recursos naturais.</li>
+                        <li>✔ Promove a independência energética.</li>
+                    </ul>
+                    <h4 class="text-center mt-4">Desafios a serem superados:</h4>
+                    <ul class="list-unstyled text-center">
+                        <li>✘ Alto custo inicial de implementação.</li>
+                        <li>✘ Dependência de condições climáticas.</li>
+                        <li>✘ Necessidade de infraestrutura específica.</li>
+                        <li>✘ Armazenamento eficiente de energia.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section id="contato" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-success text-center mb-5">Entre em Contato</h2>
+            <form action="#" method="post">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="nome" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="nome" name="nome" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="email" class="form-label">E-mail</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="mensagem" class="form-label">Mensagem</label>
+                    <textarea class="form-control" id="mensagem" name="mensagem" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-success">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white text-center py-4 mt-5">
+        <div class="container">
+            <p>&copy; 2024 Clean Energy. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

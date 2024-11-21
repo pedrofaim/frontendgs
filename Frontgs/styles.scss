@@ -1,0 +1,59 @@
+// Variáveis de cor e fonte
+$cor-primaria: #007bff; // Azul do cabeçalho e rodapé
+$cor-secundaria: #28a745; // Verde de fundo
+$fonte-primaria: 'Geist Mono',
+monospace;
+// Estilos gerais
+body {
+    font-family: $fonte-primaria;
+    background-color: $cor-secundaria;
+    color: #28a745;
+}
+
+header,
+footer {
+    background-color: $cor-primaria;
+}
+
+.card {
+    border: none;
+}
+
+section {
+    padding: 50px 0;
+}
+
+// Estilo para a seção de formulário (Contato)
+#contato {
+    background-color: lighten($cor-secundaria, 10%); // Verde claro para a seção de formulário
+    color: white;
+    padding: 60px 0; // Ajuste de padding para melhorar a aparência
+    form {
+        background-color: darken($cor-secundaria, 5%); // Fundo mais escuro para o formulário
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        .form-control {
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+        .btn {
+            background-color: $cor-primaria;
+            color: white;
+            border: none;
+            &:hover {
+                background-color: darken($cor-primaria, 10%);
+            }
+        }
+    }
+}
+
+// Media query (Mobile First)
+@media (min-width: 768px) {
+    .card {
+        transition: transform 0.3s;
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+}

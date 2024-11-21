@@ -1,0 +1,53 @@
+body {
+  font-family: "Geist Mono", monospace;
+  background-color: #28a745;
+  color: #28a745;
+}
+
+header,
+footer {
+  background-color: #007bff;
+}
+
+.card {
+  border: none;
+}
+
+section {
+  padding: 50px 0;
+}
+
+#contato {
+  background-color: rgb(51.6956521739, 206.3043478261, 87);
+  color: white;
+  padding: 60px 0;
+}
+#contato form {
+  background-color: rgb(35.0724637681, 146.4275362319, 60.5);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+#contato form .form-control {
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+#contato form .btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
+#contato form .btn:hover {
+  background-color: rgb(0, 98.4, 204);
+}
+
+@media (min-width: 768px) {
+  .card {
+    transition: transform 0.3s;
+  }
+  .card:hover {
+    transform: scale(1.05);
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
